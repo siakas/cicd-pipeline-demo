@@ -7,7 +7,9 @@ import NotComponents from '@/components/NotComponents'
 const Home: NextPage = () => {
   return (
     <>
-      <main className="min-h-screen bg-slate-900 text-slate-400 antialiased">
+      <main
+        className="min-h-screen bg-slate-900 text-slate-400 antialiased" data-props={'test'}
+      >
         <Head>
           <title>Not Tailwind CSS | Code Hike Demo</title>
         </Head>
