@@ -1,8 +1,8 @@
 const NotComponents = () => {
   return (
     <div className="not-components relative mx-auto max-w-7xl py-48 px-4 sm:px-6 md:px-8 lg:grid lg:grid-cols-12 lg:grid-rows-1 lg:gap-x-8">
-      <Title />
-      <Demo />
+      <Title></Title>
+      <Demo></Demo>
     </div>
   )
 }

@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <header className="relative"><div className="px-4 sm:px-6 md:px-8"><Nav /><Title /><Content /></div></header>
+    <header className="relative"><div className="px-4 sm:px-6 md:px-8"><Nav></Nav><Title></Title><Content /></div></header>
   )
 }
 
