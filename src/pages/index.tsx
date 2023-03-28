@@ -18,8 +18,6 @@ const Home: NextPage = () => {
         <Header />
         <ModernFeatures />
         <NotComponents />
-        <ModernFeatures />
-        <NotComponents />
       </main>
     </>
   )
