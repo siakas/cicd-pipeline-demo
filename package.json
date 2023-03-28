@@ -48,10 +48,11 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "npm run fix"
+      "eslint --fix",
+      "prettier --write"
     ],
     "*.{json,md,mdx,css,scss,html,pug}": [
-      "npm run fix:prettier"
+      "prettier --write"
     ]
   }
 }

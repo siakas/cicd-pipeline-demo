@@ -5,6 +5,8 @@ const Header = () => {
         <Nav />
         <Title />
         <Content />
+        <Title />
+        <Content />
       </div>
     </header>
   )
