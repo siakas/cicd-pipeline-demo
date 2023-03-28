@@ -3,10 +3,8 @@ const Header = () => {
     <header className="relative">
       <div className="px-4 sm:px-6 md:px-8">
         <Nav />
-        <Title />
-        <Content />
-        <Title />
-        <Content />
+        <Title></Title>
+        <Content></Content>
       </div>
     </header>
   )
