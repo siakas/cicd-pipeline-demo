@@ -1,10 +1,8 @@
 const ModernFeatures = () => {
   return (
-    <section className="relative mt-48">
-      <div className="relative">
-        <Background />
-      </div>
-    </section>
+<section className="relative mt-48">
+<div className="relative"><Background /></div>
+</section>
   )
 }
 
