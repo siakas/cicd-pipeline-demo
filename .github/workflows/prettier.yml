@@ -1,0 +1,34 @@
+name: Prettier Auto-Format
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  prettier:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Prettier on PR changes
+        run: npx prettier --config .prettierrc.toml --write '**/*.{js,jsx,ts,tsx,json,md,mdx,css,scss,html,pug}'
+
+      - name: Commit Prettier changes
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add .
+          if git commit -m "chore: format code with Prettier"; then
+            git push
+          fi
