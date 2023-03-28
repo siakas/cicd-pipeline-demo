@@ -48,7 +48,7 @@
   },
   "lint-staged": {
     "src/**/*": [
-      "npm run fix"
+      "yarn fix"
     ]
   }
 }
