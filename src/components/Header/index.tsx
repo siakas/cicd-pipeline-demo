@@ -2,11 +2,8 @@ const Header = () => {
   return (
     <header className="relative">
       <div className="px-4 sm:px-6 md:px-8">
-        <Nav />
-        <Title />
-        <Content />
-        <Title />
-        <Content />
+<Nav />
+<Title /><Content /><Title /><Content />
       </div>
     </header>
   )
@@ -27,8 +24,7 @@ const Nav = () => {
           />
         </svg>
         <span>not tailwindcss</span>
-      </div>
-      <div className="ml-6 flex items-center pl-6">
+</div><div className="ml-6 flex items-center pl-6">
         <a
           href="https://github.com/code-hike/not-tailwind"
           className="ml-6 block text-slate-400 hover:text-slate-500 dark:hover:text-slate-300"
@@ -42,8 +38,7 @@ const Nav = () => {
           >
             <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
           </svg>
-        </a>
-        <a
+        </a><a
           href="https://twitter.com/codehike_"
           className="ml-6 block text-slate-400 hover:text-slate-500 dark:hover:text-slate-300"
         >
@@ -60,8 +55,7 @@ const Nav = () => {
               fill="currentColor"
             />
           </svg>
-        </a>
-        <a
+        </a><a
           href="https://youtu.be/sPDvKlmUkC4"
           className="ml-6 block text-slate-400 hover:text-slate-500 dark:hover:text-slate-300"
         >
@@ -74,7 +68,7 @@ const Nav = () => {
           >
             <g>
               <path
-                fillRule="evenodd"
+                fillRule='evenodd'
                 d="M8.16 12.676V7.323L12.863 10 8.16 12.676zm10.464-7.037a2.26 2.26 0 00-1.592-1.602C15.628 3.659 10 3.659 10 3.659s-5.628 0-7.032.378a2.261 2.261 0 00-1.591 1.602C1 7.052 1 9.999 1 9.999s0 2.948.377 4.36c.207.78.817 1.394 1.59 1.603 1.405.38 7.033.38 7.033.38s5.628 0 7.032-.38a2.262 2.262 0 001.592-1.602C19 12.947 19 10 19 10s0-2.948-.376-4.361z"
                 clipRule="evenodd"
               />
