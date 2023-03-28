@@ -1,20 +1,33 @@
 const Header = () => {
   return (
-    <header className="relative"><div className="px-4 sm:px-6 md:px-8"><Nav></Nav><Title></Title><Content /></div></header>
+    <header className="relative">
+      <div className="px-4 sm:px-6 md:px-8">
+        <Nav />
+        <Title />
+        <Content />
+      </div>
+    </header>
   )
 }
 
 const Nav = () => {
   return (
-    <div className="relative flex items-center justify-between pt-6 text-xl text-slate-200 lg:pt-8">      <div className="flex items-center">
-        <svg viewBox="0 0 64 31" className="h-5 w-auto">          <path
-            fillRule="evenodd"            clipRule="evenodd"            d="M25.517 0C18.712 0 14.46 3.382 12.758 10.146c2.552-3.382 5.529-4.65 8.931-3.805 1.941.482 3.329 1.882 4.864 3.432 2.502 2.524 5.398 5.445 11.722 5.445 6.804 0 11.057-3.382 12.758-10.145-2.551 3.382-5.528 4.65-8.93 3.804-1.942-.482-3.33-1.882-4.865-3.431C34.736 2.92 31.841 0 25.517 0zM12.758 15.218C5.954 15.218 1.701 18.6 0 25.364c2.552-3.382 5.529-4.65 8.93-3.805 1.942.482 3.33 1.882 4.865 3.432 2.502 2.524 5.397 5.445 11.722 5.445 6.804 0 11.057-3.381 12.758-10.145-2.552 3.382-5.529 4.65-8.931 3.805-1.941-.483-3.329-1.883-4.864-3.432-2.502-2.524-5.398-5.446-11.722-5.446z"
+    <div className="relative flex items-center justify-between pt-6 text-xl text-slate-200 lg:pt-8">
+      {' '}
+      <div className="flex items-center">
+        <svg viewBox="0 0 64 31" className="h-5 w-auto">
+          {' '}
+          <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M25.517 0C18.712 0 14.46 3.382 12.758 10.146c2.552-3.382 5.529-4.65 8.931-3.805 1.941.482 3.329 1.882 4.864 3.432 2.502 2.524 5.398 5.445 11.722 5.445 6.804 0 11.057-3.382 12.758-10.145-2.551 3.382-5.528 4.65-8.93 3.804-1.942-.482-3.33-1.882-4.865-3.431C34.736 2.92 31.841 0 25.517 0zM12.758 15.218C5.954 15.218 1.701 18.6 0 25.364c2.552-3.382 5.529-4.65 8.93-3.805 1.942.482 3.33 1.882 4.865 3.432 2.502 2.524 5.397 5.445 11.722 5.445 6.804 0 11.057-3.381 12.758-10.145-2.552 3.382-5.529 4.65-8.931 3.805-1.941-.483-3.329-1.883-4.864-3.432-2.502-2.524-5.398-5.446-11.722-5.446z"
             fill="#38bdf8"
-          /></svg>
+          />
+        </svg>
         <span>not tailwindcss</span>
-</div>
+      </div>
       <div className="ml-6 flex items-center pl-6">
-<a
+        <a
           href="https://github.com/code-hike/not-tailwind"
           className="ml-6 block text-slate-400 hover:text-slate-500 dark:hover:text-slate-300"
         >
@@ -46,7 +59,10 @@ const Nav = () => {
             />
           </svg>
         </a>
-        <a href="https://youtu.be/sPDvKlmUkC4" className="ml-6 block text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
+        <a
+          href="https://youtu.be/sPDvKlmUkC4"
+          className="ml-6 block text-slate-400 hover:text-slate-500 dark:hover:text-slate-300"
+        >
           <span className="sr-only">YouTube</span>
           <svg
             type="color-fill-current"
@@ -61,7 +77,10 @@ const Nav = () => {
                 clipRule="evenodd"
               />
             </g>
-          </svg></a></div></div>
+          </svg>
+        </a>
+      </div>
+    </div>
   )
 }
 
@@ -69,7 +88,7 @@ const Title = () => {
   return (
     <div className="relative mx-auto max-w-5xl pt-20 sm:pt-24 lg:pt-32">
       <h1 className="text-center text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
-        Rapidly build a clone of Tailwind's landing page with Code Hike.
+        Rapidly build a clone of Tailwind&apos;s landing page with Code Hike.
       </h1>
       <p className="mx-auto mt-6  max-w-3xl text-center text-lg text-slate-400">
         A utility-first CSS framework packed with classes like{/* */}{' '}
@@ -93,21 +112,23 @@ const Content = () => {
         Cutting-edge is our comfort&nbsp;zone.
       </p>
 
-<div className="mt-4 max-w-3xl space-y-6 "><p>
+      <div className="mt-4 max-w-3xl space-y-6 ">
+        <p>
           Tailwind is unapologetically modern, and takes advantage of all the
           latest and greatest CSS features to make the developer experience as
           enjoyable as possible.
-</p><p>
-          We've got first-class CSS grid support, composable transforms and
+        </p>
+        <p>
+          We&apos;ve got first-class CSS grid support, composable transforms and
           gradients powered by CSS variables, support for modern state selectors
           like{/* */}{' '}
           <code className="font-mono font-medium text-slate-200 ">
             :focus-visible
           </code>
           , and tons more.
-</p>
-</div>
-</div>
+        </p>
+      </div>
+    </div>
   )
 }
 
