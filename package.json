@@ -49,6 +49,9 @@
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "npm run fix"
+    ],
+    "*.{json,md,mdx,css,scss,html,pug}": [
+      "npm run fix:prettier"
     ]
   }
 }
