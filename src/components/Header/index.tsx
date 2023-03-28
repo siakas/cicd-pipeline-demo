@@ -4,7 +4,7 @@ const Header = () => {
       <div className="px-4 sm:px-6 md:px-8">
 <Nav />
 <Title /><Content /><Title /><Content />
-      </div>
+</div>
     </header>
   )
 }
